@@ -1,0 +1,111 @@
+/* global */
+body{
+    background-color: #323232;
+    color: #fff;
+    position: relative;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+/* navbar */
+nav h1{
+    font-family: "handlee",cursive ;
+    cursor: pointer;
+
+}
+/* inputs */
+label{
+    font-size: 2em;
+    font-family: monospace;
+}
+/* search */
+.search{
+    position: absolute;
+    top: 5em;
+    right: 1.4em;
+}
+.search >input{
+    margin-bottom: 1.5em;
+}
+/* notes */
+.content{
+    background-color: rgba(255, 255, 255 ,.7);
+    padding: 2em;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+    color: black;
+}
+
+/* media queries */
+
+/* MEDIA QUERIES */
+
+/* For tablets (up to 991px) */
+@media (max-width: 991px) {
+    .content {
+        padding: 1.5em;
+        font-size: 0.95em;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .btns .btn {
+        width: 100% !important;
+        margin-bottom: 0.5em;
+    }
+
+    .search {
+        position: static;
+        margin: 1em auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .search input {
+        width: 100%;
+    }
+}
+
+/* For mobile phones (up to 576px) */
+@media (max-width: 576px) {
+    nav h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    label {
+        font-size: 1.2em;
+    }
+
+    .content {
+        padding: 1em;
+        font-size: 0.9em;
+    }
+
+    .search {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .search input {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .btns .btn {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+}
