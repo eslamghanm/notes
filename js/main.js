@@ -93,7 +93,7 @@ function deletNote (index ) {
         if (result.isConfirmed) {
             allNotes.splice(index, 1);
             localStorage.setItem("notes", JSON.stringify(allNotes))
-            displayInputs();
+            displayInputs(allNotes);
           Swal.fire({
             title: "Deleted!",
             text: "Your file has been deleted.",
