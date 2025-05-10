@@ -8,6 +8,7 @@ body{
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
+    min-height: 100vh;
 }
 /* navbar */
 nav h1{
@@ -41,7 +42,6 @@ label{
     color: black;
 }
 
-/* media queries */
 
 /* MEDIA QUERIES */
 
@@ -52,25 +52,21 @@ label{
         font-size: 0.95em;
     }
 
-    .btns {
-        flex-direction: column;
-    }
-
+  
     .btns .btn {
-        width: 100% !important;
+        width: 50%;
         margin-bottom: 0.5em;
     }
 
     .search {
-        position: static;
-        margin: 1em auto;
-        text-align: center;
-        width: 90%;
+     
+        width:70%;
     }
 
     .search input {
         width: 100%;
     }
+    
 }
 
 /* For mobile phones (up to 576px) */
@@ -85,12 +81,13 @@ label{
     }
 
     .content {
+
         padding: 1em;
         font-size: 0.9em;
     }
 
     .search {
-        width: 100%;
+      width: 70%;
         margin: 1em 0;
     }
 

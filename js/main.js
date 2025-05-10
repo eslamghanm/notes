@@ -77,6 +77,8 @@ temp += `  <div class="col-md-4 col-lg-6 ">
 function clearInputs () {
     titleInput.value = "";
     contentInput.value = "";
+    searchByContent.value = "";
+    searchByTitle.value = "";
 }
 // delete note
 function deletNote (index ) {
